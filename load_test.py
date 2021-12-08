@@ -15,7 +15,7 @@ class User(TaskSet):
    def test(self):
        self.client.get("/test")
  
-class WebsiteUser(HttpLocust):
+class WebsiteUser(HttpUser):
    task_set = User
    min_wait = 5000
    max_wait = 9000
